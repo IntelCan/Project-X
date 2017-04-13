@@ -26,15 +26,7 @@ export class HelloComponent implements OnInit, OnDestroy {
     // on-init
     ngOnInit() {
         // save _subscription
-        this._subscription = this._helloService.getTest()
-            .subscribe(
-                (data) => {
-                    this.jsonResponse = JSON.stringify(data);
-                    this.messages = data;
-                },
-                (err) => console.log(err),
-                () => console.log('hello service test complete')
-        );
+
     }
 
     // on-destroy

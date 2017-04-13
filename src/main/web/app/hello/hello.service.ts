@@ -7,8 +7,5 @@ export class HelloService {
 
     constructor(private _http: Http) {}
 
-    getTest() {
-        return this._http.get('http://localhost:8080/test/get/json')
-            .map((res:Response) => res.json());
-    }
+
 }
